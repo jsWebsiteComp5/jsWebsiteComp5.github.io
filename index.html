@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Hide .download when the document is ready
+            $(".download").hide();
+
+            $(".btn1").click(function(){
+                $(".download").slideToggle(500);
+            });
+        });
+    </script>
+    <nav class="navbar">
+        <img src="img/logo.png" alt="PesoPal" class="logo">
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="../html/about.html">About us</a></li>
+            <li><a href="../html/contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <div class="body">
+        <div class="fortext">
+            <h2>FAST AND CONVENIENT</h2>
+            <h1>PesoPal Sari Sari</h1>
+            <a href="#" class="btn1">Get our app</a>
+            <a href="#" class="download">Download</a>
+        </div>
+        
+        <div class="forimage"><img src="img/sidelogo.png" alt="BAG" class="sidelogo"></div>
+    </div>
+</body>
+</html>

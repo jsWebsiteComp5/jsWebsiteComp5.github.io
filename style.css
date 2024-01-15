@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, rgb(160, 160, 160) 0%, rgb(160, 160, 160) 65%, rgb(75, 75, 75) 65%, rgb(75, 75, 75) 100%);
+}
+
+.navbar {
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    background-color: transparent;
+    z-index: 99999;
+    margin-top: -50px;
+    margin-bottom: -60px;
+    height: 150px;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    display: block;
+    margin-left: 20px;
+    color: black;
+    border-bottom: 4px solid black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo {
+    
+    height: 150px;
+    width: 150px;
+    z-index: 0;
+    
+}
+
+.sidelogo {
+    max-width: 100%;
+    width: 400px;
+    height: 400px;
+    margin-top: -75px;
+    
+}
+
+.body {
+    margin: 10% 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.body h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.body h2 {
+    margin-top: 50px;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.body a {
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    margin: 10px 0px;
+    border-radius: 5px;
+    background-color: rgb(115, 183, 243);
+}
+
+.btn1 {
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn1:hover {
+    background-color: rgb(37, 144, 236);
+    cursor: pointer;
+}
+
+.download:hover {
+    background-color: rgb(37, 144, 236);
+    cursor: pointer;
+}
+
+.download {
+    transition: background-color 0.2s ease-in-out;
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .menu {
+        margin-top: 20px;
+    }
+
+    .navbar .menu li {
+        margin-bottom: 10px;
+    }
+
+    .body {
+        margin: 20% 5%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .forimage{
+        display: none;
+    }
+}
+
+

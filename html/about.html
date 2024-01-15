@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src="../img/logo.png" alt="PesoPal" class="logo">
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../html/about.html">About us</a></li>
+            <li><a href="../html/contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        <div class="container">
+            <h1>About us</h1>
+            <h4>Welcome to PesoPal Sari Sari - your fast and convenient <br>
+            shopping destination</h4>
+            <p class="pone">PesoPal Sari-Sari was born out of a simple yet powerful idea:
+                to create a seamless, fast, and enjoyable online shopping experience.
+                Just like the beloved sari-sari stores in every neighborhood, we aim to 
+                be your go-to destinationfor all your daily needs, right from the comfort
+                of your home.
+            </p>
+            <p class="ptwo">
+                We understand value of time in today's fast-paced world. PesoPal Sari-Sari
+                is your answer to convenient. With our user-friendly interface and swift delivery
+                services, we're dedicated to save you time and effort, allowing you to focus
+                on the things that matter most.
+            </p>
+        </div>
+        <div class="container2">
+            <div class="swiper">  
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../img/img1.png"></div>
+                    <div class="swiper-slide"><img src="../img/img2.png"></div>
+                    <div class="swiper-slide"><img src="../img/img4.png"></div>  
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>

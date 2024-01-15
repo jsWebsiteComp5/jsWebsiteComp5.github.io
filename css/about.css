@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(160, 160, 160);
+}
+
+.navbar { 
+    margin-top: -30px;
+    padding: 0px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 99999;
+    margin-bottom: -50px;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    display: block;
+    margin-left: 20px;
+    color: black;
+    border-bottom: 4px solid black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;  
+    z-index: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+    margin: 30px auto;
+    
+}
+
+.container {
+    width: 40%;
+    text-align: justify;
+    flex-basis: 50%;
+}
+
+.container2 {
+    flex-basis: 50%;
+    width: 100%;
+}
+
+.swiper {
+    width: 500px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    background-size:cover;
+    border-radius: 30px;
+}
+
+
+.pone, .ptwo {
+    margin-top: 25px;
+}
+
+.main h1{
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .menu {
+        margin-top: 20px;
+    }
+
+    .navbar .menu li {
+        margin-bottom: 10px;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: -40px;
+    }
+
+    .pic {
+        width: auto;
+        height: 50px;
+    }
+
+    .container{
+        width: 100%;
+        text-align: justify;
+        justify-content: center;
+    }
+    
+    .swiper {
+        width: auto;
+        height: 200px;
+        border-radius: 30px;
+        margin-bottom: 35px;
+
+    }
+    h1 {
+        text-align: center;
+    }
+}
